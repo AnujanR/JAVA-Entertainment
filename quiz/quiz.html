@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA - QUIZ</title>
+
+    <!-- CSS styles of the website -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="quiz.css">
+
+    <!-- css style of navigation bar by student 2-->
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- css styles from external websites -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- scripts from external websites -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="quiz.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../imgs/logo.svg" alt="logo" autocomplete="off">
+        <div class="search-container">
+            <form action="/action_page.php" class="search">
+                <input type="text" placeholder="Search.." name="search" autocomplete="off">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../mainpage.html">Home</a></li>
+                <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                <li><a href="../thumbnail/thumbnailimages.html">Images</a></li>
+                <li><a href="../quiz/quiz.html">quiz</a></li>
+                <li><a href="../sitemap/sitemap.html">sitemap</a></li>
+                <li><a href="../products/products.html">shop</a></li>
+                <li><a href="../events/events.html">Events</a></li>
+                <li><a href="../query/query.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- header background reserved for titles-->
+    <section>
+        <div class="title-bg-head">
+            <div class="bg-header">
+                <h3>QUIZ</h3>
+                <p>This site contains a quiz. There are 10 questions and only 1 min countdown is given. And when you submit, the marks will be displayed and if the total marks are below 10 the background page color will change into red color and if all answers are correct the color will change into green.</p>
+                <span>
+                    <a href="#quiz">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                      Learn More
+                    </a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- quiz-->
+    <section>
+        	   <!-- Quiz -->
+    <div class="header" id="quiz">
+        <!-- <h1>Quiz</h1> -->
+        <div>
+           <h6 id ="colorexplain"></h6> 
+            <h2 id="results"> You scored : Not yet attempted () </h2>
+        </div>
+
+        <h2>10 Questions</h2>
+
+
+        <br />
+
+        <div id="body">
+
+            <div id="time" name="time">
+                <p id="timer"> </p>
+            </div>
+            <button onclick="topFunction()" id="top" title="Go to top"><i class="arrow2 up"></i></button>
+
+            <form name="quiz">
+
+
+                <div class="question">
+                    <p><strong>Q1</strong>: When is Beauty and the Beast movie released?</p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(0,1)" name="q1" value="a">April 25,2017</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(0,2)" name="q1" value="b">March 17, 2017</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(0,3)" name="q1" value="c">April 13,2022</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(0,4)" name="q1" value="d">Feb 14,2017</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q2</strong>: How long was the duration of the new Spiderman movie “No way home”?</p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(1,1)" name="q2" value="a">148 minutes</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(1,2)" name="q2" value="b">160 minutes</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(1,3)" name="q2" value="c">137 minutes </label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(1,4)" name="q2" value="d">170 minutes</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q3</strong>: Who is the director of Spider-Man: No Way Home?</p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(2,1)" name="q3" value="a">DC.Morgan</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(2,2)" name="q3" value="b">Jon Watts</label> 
+                    <label>
+                        <input type="radio" onclick="enterAnswer(2,3)" name="q3" value="c">Dianne McGunigle</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(2,4)" name="q3" value="d">John clink</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q4</strong>: Who didn't act in The Batman 2022 ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(3,1)" name="q4" value="a">Colin Farrell</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(3,2)" name="q4" value="b">Andy Serkis</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(3,3)" name="q4" value="c">Robert Pattinson</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(3,4)" name="q4" value="d">Greig Fraser</label> 
+                </div>
+
+                <div class="question">
+                    <p><strong>Q5</strong>: In which year was Django Unchained released ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(4,1)" name="q5" value="a">2012</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(4,2)" name="q5" value="b">2007</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(4,3)" name="q5" value="c">2014</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(4,4)" name="q5" value="d">2015</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q6</strong>: which film was nominated for OSCAR best picture in 2021 ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(5,1)" name="q6" value="a">Nomadland</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(5,2)" name="q6" value="b">The Father</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(5,3)" name="q6" value="c">La la land</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(5,4)" name="q6" value="d">Pieces of a Woman</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q7</strong>: Who is the Founder of Marvel ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(6,1)" name="q7" value="a">Cooper Naren</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(6,2)" name="q7" value="b">Abbas jeeker</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(6,3)" name="q7" value="c">Martin Goodman</label> 
+                    <label>
+                        <input type="radio" onclick="enterAnswer(6,4)" name="q7" value="d">Greig Fraser</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q8</strong>: Avatar movie released year ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(7,1)" name="q8" value="a">2008</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(7,2)" name="q8" value="b">2009</label> 
+                    <label>
+                        <input type="radio" onclick="enterAnswer(7,3)" name="q8" value="c">2010</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(7,4)" name="q8" value="d">2011</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q9</strong>: Titanic movie released year ? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(8,1)" name="q9" value="a">1996</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(8,2)" name="q9" value="b">1997</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(8,3)" name="q9" value="c">1998</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(8,4)" name="q9" value="d">1986</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>Q10</strong>: Who is the Director of the movie Pirates of the Caribbean? </p>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(9,1)" name="q10" value="a">Geoffrey Rush</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(9,2)" name="q10" value="b">Rob Marshall
+                        indutry</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(9,3)" name="q10" value="c">Sam Claffin
+                        industry</label>
+                    <label>
+                        <input type="radio" onclick="enterAnswer(9,4)" name="q10" value="d">Astrid Cruez
+                        industry</label>
+                </div>
+            </form>
+
+
+
+        </div>
+	            <button class="btn-submit" onclick="checkComplete()">Submit</button>
+		
+    </section>
+    <!-- footer -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../mainpage.html">Home</a></li>
+                        <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                        <li><a href="../sitemap/sitemap.html">Sitemap</a></li>
+                        <li><a href="../query/query.html">Feedback</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="../thumbnail/thumbnailimages.html">Images</a></li>
+                        <li><a href="../products/products.html">Shop</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../quiz/quiz.html">Quiz</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Page Editors</h4>
+                    <ul>
+                        <li><a href="../students/student1.html">Student 1</a></li>
+                        <li><a href="../students/student2.html">Student 2</a></li>
+                        <li><a href="../students/student3.html">Student 3</a></li>
+                        <li><a href="../students/student4.html">Student 4</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>subscribe</h4>
+                    <div class="social-links">
+                        <form>
+                            <label for="email"></label>
+                            <input class="la_2" type="email" id="email" name="email" placeholder="Enter the Email">
+                            <input class="la" type="submit" name="SEND" value="SEND">
+                        </form>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="footer-total">
+                <div class="footer-col">
+                    <div class="Text">
+                        <ul>
+                            <li><a href="../students/student3.html"> Page Developer </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="group">
+                        <ul>
+                            <li><a href="#"> Group A7 </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </footer>
+
+    <script>
+        
+var button1 = document.getElementById("top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button1.style.display = "block";
+  } else {
+    button1.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            //   pagination: {
+            //     el: ".swiper-pagination",
+            //   },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            freeMode: true,
+            freeModeMomentum: false,
+            freeModeMomentumBounce: false,
+            speed: 1000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper4", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            centeredSlides: true,
+            loop: true,
+            // freeMode: true,
+            // freeModeMomentum: false,
+            // freeModeMomentumBounce: false,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: -120,
+                depth: 600,
+                modifier: 1,
+                slideShadows: true,
+            },
+            autoplay:{
+                        delay:2500,
+                        disableOnInteraction:false,
+                        },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper5", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

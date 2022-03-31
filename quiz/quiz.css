@@ -1,0 +1,111 @@
+.bg-header h5{
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 500;
+}
+.bg-header h3{
+    margin-block-end: -0.3em !important;
+}
+
+/* Quiz css */
+/* Questions and Options */
+ #body{
+height: 100vh;  width: 75%;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;  text-align: center;
+  border: 0.5px solid var(--yellow);
+  padding: 2.5em;
+}
+#timer{
+  color: var(--yellow);
+  /* text-decoration: underline; */
+}
+.header
+{
+  
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  
+}
+.question p{
+  margin-bottom: 20px;
+}
+
+.question label {
+  
+  margin-bottom:5px;
+  width:20px;
+  margin-left:490px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 30%;
+  margin-bottom: 20px;
+  color: var(--white);
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  border: #FFC107 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+label:hover{
+  
+  background-color: var(--yellow);
+  color: var(--lightblue);
+
+  outline: none;
+  border: #FFC107 2px solid;
+   
+}
+
+
+.question input{
+  width: 15px;
+  margin-right: 10px;
+  height: 15px;
+    
+}
+input[type='radio']:checked:after {
+  background-color: #FFC107;
+  border: 50px solid red;
+}
+
+.btn-submit{
+  text-align: center;
+  background-color: var(--yellow);
+  color: var(--lightblue);
+  font-weight: 600;
+  padding: 10px 8px;
+  border-radius: 6px;
+  outline: none;
+  border: #FFC107 1px solid;
+  font-size: 16px;
+  width: 25%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+
+
+}
+
+.btn-submit:hover{
+  color: var(--white);
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  border: #FFC107 2px solid;
+}
+
+
+.question label {
+  display: block;
+}
+
+.question input[type=submit] {
+  margin-top: 15px;
+}

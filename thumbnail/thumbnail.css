@@ -1,0 +1,611 @@
+
+#myBtn {
+	
+	display:none;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	z-index:99;
+	font-family:Cabin Sketch;
+	cursor: pointer;
+	font-size:18px;
+	font-weight:body;
+	border:none;
+	outline:none;
+	background-color:rgba(255,255,255,0.3);
+	color:black;
+	padding:15px;
+	border-radius:20px;
+}
+.outline {
+	
+	width:100%;
+	height:700px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.outline .feedback{
+	padding-bottom:100px;
+	padding-top:50px;
+	padding:0px;
+	background-color:white;
+	margin: auto;
+    width: 90%;
+    border: none;
+	height:500px;
+	border-radius:30px;
+	
+}
+.outline .feedback .feedback_bg{
+	top:0px;
+	padding-top:0px;
+	width:45%;
+	height:500px;
+	background-image:url("photos/bg2.jpeg");
+	background-size:cover;
+	float:left;
+	border-radius:40px 0px 0px 40px;
+	
+}
+.outline .feedback .feedback_content{
+	padding-top:70px;
+	padding-left:20px;
+	width:55%;
+	float:left;
+	font-color:black;
+	
+}
+input[type="radio"]{
+	margin: 0 10px 0 10px;
+}
+
+.sitemap{
+	width:100%;
+	height: 100vh;
+	position: relative;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+
+.sitemap svg{
+width: 100%;
+height: 100%;
+left: -12%;
+top: 50px;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+position: absolute;
+
+display: flex;
+
+
+
+}
+
+
+.svg_container{
+	height:90%;
+	width:100%;
+	
+}	
+
+.rectbutton rect{
+	/* fill:var(--yellow); */
+	
+	transition: fill 0.4s, stroke 0.5s;
+	
+	
+}
+
+.rectbutton:hover rect{
+	fill:var(--yellow);
+	cursor:pointer;
+	
+}
+
+.heading{
+	font-size:2.5em;
+    transform: translateX(600px);
+	width:fit-content;
+	
+}
+
+.buttontext{
+	color:var(--white) !important;
+	font-weight:600;
+	
+}
+
+.buttontext:hover{
+	cursor:pointer;
+	
+}
+svg text{
+	color: #fff !important;
+}
+line{
+	stroke:rgb(255, 255, 255);
+
+}
+
+svg rect {
+	x:10px;
+	y:1px;
+	width: 188px;
+	height: 55px;
+	fill:#020916;
+	stroke: var(--yellow) !important;
+	stroke-width: 2px;
+}
+svg .rectbutton text{
+	x:50%;
+	y:50%;
+	font-size: 1.1em;
+	
+	transform: translate(-10px,-10px);
+	fill: var(--white) !important;
+}
+#parent image{
+	width: 90px;
+	height: 88px;
+	x:155px;
+	-webkit-filter: drop-shadow( 3px 3px 6px rgba(0, 0, 0, 0.507));
+	y:188px;
+}
+#parent .about{
+	x:615px;
+}
+#parent .feedback{
+	x:1090px;
+}
+#parent .quiz{
+	x:155px;
+	y:388px;
+}
+#parent .images{
+	x:615px;
+	y:388px;
+}
+#parent .shop{
+	x:1090px;
+	y:388px;
+}
+#parent .logo{
+	width: 190px;
+	height: 108px;
+	x:660px;
+	y:8px;
+}
+form select{
+	width: 260px;
+    padding: 12px 50px;
+    background-color: #23385E;
+    border: none;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 1.15rem;
+    outline: none;
+	font-weight: 600;
+	font-family: "poppins",'FontAwesome';
+}
+.form-clr{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+select {
+	font-family: 'FontAwesome', 'poppins';
+  }
+  .brush1,.brush2{
+	  position: relative;
+  }
+  .brush1{
+	  margin-left:120px;
+  }
+  .brush2{
+	  margin-right:120px;
+  }
+.dropdown::after{
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: rgb(221, 221, 221);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+   
+    /*Adjust for position however you want*/
+    
+    padding: 0 0 2px;
+    border-bottom: 1px solid rgb(167, 166, 166);
+    left: 220px;top:13px;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+}
+.arrow-mod::after{
+	left: 220px;
+}
+select:hover{
+
+	color: var(--yellow);
+}
+ select::-ms-expand {
+    display: none;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+     
+      }
+	  .color-form{
+		  display: flex;
+		  justify-content: center;
+	  }
+.mg-2{
+	margin-right: 85px;
+}
+.thumb-img img{
+	width: 180px;
+	border-radius: 6px;
+}
+.thumb-img{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px 50px;
+	margin-top: 80px;
+
+}
+.thumb-img img{
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+
+.thumb-img img:hover{
+	opacity: 0.6;
+
+}
+
+.movie-card {
+	font: 14px/22px "Lato", Arial, sans-serif;
+	color: #A9A8A3;
+	/* padding: 40px 0; */
+  }
+  
+  .container-thumbnail {
+	margin: 0 auto;
+	width: 900px;
+	height: 640px;
+	background: #1e2b44;
+	border-radius: 5px;
+	position: relative;
+  }
+  
+  .hero {
+	height: 342px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+  
+  .im1:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background: red;
+	background: url("../imgs/thumbnail-pages/header1.jpg");
+	z-index: -1;
+	transform: skewY(-2.2deg);
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	background-size: cover;
+  }
+  .im2:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background: red;
+	background: url("../imgs/thumbnail-pages/header2.jpg");
+	z-index: -1;
+	transform: skewY(-2.2deg);
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	background-size: cover;
+  }
+  .im3:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background: red;
+	background: url("../imgs/thumbnail-pages/header3.jpg");
+	z-index: -1;
+	transform: skewY(-2.2deg);
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	background-size: cover;
+  }
+  .im4:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background: red;
+	background: url("../imgs/thumbnail-pages/header4.jpg");
+	z-index: -1;
+	transform: skewY(-2.2deg);
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	background-size: cover;
+  }
+  .im5:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background: red;
+	background: url("../imgs/thumbnail-pages/header5.jpg");
+	z-index: -1;
+	transform: skewY(-2.2deg);
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	background-size: cover;
+  }
+  .cover {
+	position: absolute;
+	top: 130px;
+	left: 25px;
+	z-index: 2;
+	width: 220px;
+	box-shadow: 5px 5px 8px #0f0f0f38;
+
+  }
+  
+ .movie-card  .details {
+	padding: 190px 0 0 280px;
+  }
+  .movie-card .details .title1 {
+	color: white;
+	font-size: 44px;
+	margin-bottom: 13px;
+	position: relative;
+  }
+  .details .title1 span {
+	position: absolute;
+	top: 3px;
+	margin-left: 12px;
+	background: #C4AF3D;
+	border-radius: 5px;
+	color: #544C21;
+	font-size: 14px;
+	padding: 0px 4px;
+  }
+  .details .title2 {
+	color: #C7C1BA;
+	font-size: 23px;
+	font-weight: 300;
+	margin-bottom: 15px;
+  }
+  .details .likes {
+	margin-left: 24px;
+  }
+  .details .likes:before {
+	content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+	position: relative;
+	top: 2px;
+	padding-right: 7px;
+  }
+  
+ .movie-card .description {
+	bottom: 0px;
+	height: 200px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0f0f0f;
+  }
+  
+  .column1 {
+	padding-left: 50px;
+	padding-top: 120px;
+	width: 220px;
+	float: left;
+	text-align: center;
+  }
+  
+  .tag {
+	background: white;
+	border-radius: 10px;
+	padding: 3px 8px;
+	font-size: 14px;
+	margin-right: 4px;
+	line-height: 35px;
+	cursor: pointer;
+  }
+  
+  .tag:hover {
+	background: #ddd;
+  }
+  
+  .column2 {
+	padding-left: 41px;
+	padding-top: 30px;
+	margin-left: 20px;
+	width: 620px;
+	float: left;
+  }
+  
+  .avatars {
+	margin-top: 23px;
+  }
+  .avatars img {
+	cursor: pointer;
+  }
+  .avatars img:hover {
+	opacity: 0.6;
+  }
+  .avatars a:hover {
+	text-decoration: none;
+  }
+  
+  fieldset, label {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /****** Style Star Rating Widget *****/
+  .rating {
+	border: none;
+	float: left;
+  }
+  
+  .rating > input {
+	display: none;
+  }
+  
+  .rating > label:before {
+	margin: 5px;
+	margin-top: 0;
+	font-size: 1em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "";
+  }
+  
+  .rating > .half:before {
+	content: "";
+	position: absolute;
+  }
+  
+  .rating > label {
+	color: #ddd;
+	float: right;
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  .rating > input:checked ~ label,
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+	color: #FFD700;
+  }
+  
+  /* hover previous stars in list */
+  .rating > input:checked + label:hover,
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label,
+  .rating > input:checked ~ label:hover ~ label {
+	color: #FFED85;
+  }
+  
+  a[data-tooltip] {
+	position: relative;
+  }
+  
+  a[data-tooltip]::before,
+  a[data-tooltip]::after {
+	position: absolute;
+	display: none;
+	opacity: 0.85;
+  }
+  
+  a[data-tooltip]::before {
+	/*
+	 * using data-tooltip instead of title so we 
+	 * don't have the real tooltip overlapping
+	 */
+	content: attr(data-tooltip);
+	background: #000;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px;
+	border-radius: 5px;
+	/* we don't want the text to wrap */
+	white-space: nowrap;
+	text-decoration: none;
+  }
+  
+  a[data-tooltip]::after {
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	content: "";
+  }
+  
+  a[data-tooltip]:hover::before,
+  a[data-tooltip]:hover::after {
+	display: block;
+  }
+  
+  /** positioning **/
+  /* top tooltip */
+  a[data-tooltip][data-placement=top]::before {
+	bottom: 100%;
+	left: 0;
+	margin-bottom: 40px;
+  }
+  
+  a[data-tooltip][data-placement=top]::after {
+	border-top-color: #000;
+	border-bottom: none;
+	bottom: 50px;
+	left: 20px;
+	margin-bottom: 4px;
+  }
+  .description p{
+	  color: rgb(219, 219, 219);
+  }
+  .description {
+    margin-top: 0px;
+    display: inline;
+    padding:  0px;
+}
+
+.column2 a{
+	color: rgb(160, 160, 160);
+	text-transform: lowercase;
+	font-weight:500;
+
+}
+
+#thumbnail-large,#thumbnail-large2,#thumbnail-large3,#thumbnail-large4,#thumbnail-large5{
+	display: none;
+	margin-top: 20px;
+
+}
+
+.mini-img{
+	cursor: pointer;
+}
+.movie-card{
+	margin-bottom: 60px;
+	margin-top: 70px;
+}

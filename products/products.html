@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA - PRODUCTS</title>
+ 
+    <!-- CSS styles of the website -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="products.css">
+
+    <!-- css style of navigation bar by student 2-->
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- css styles from external websites -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- scripts from external websites -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../imgs/logo.svg" alt="logo" autocomplete="off">
+        <div class="search-container">
+            <form action="/action_page.php" class="search">
+                <input type="text" placeholder="Search.." name="search" autocomplete="off">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../mainpage.html">Home</a></li>
+                <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                <li><a href="../thumbnail/thumbnailimages.html">Images</a></li>
+                <li><a href="../quiz/quiz.html">quiz</a></li>
+                <li><a href="../sitemap/sitemap.html">sitemap</a></li>
+                <li><a href="../products/products.html">shop</a></li>
+                <li><a href="../events/events.html">Events</a></li>
+                <li><a href="../query/query.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- header background reserved for titles-->
+    <section>
+        <div class="title-bg-head">
+            <div class="bg-header">
+                <h5>SHOP</h5>
+                <h3>BUY PRODUCTS:</h3>
+                <p>Welcome to JAVA shop. This page is made in full interest for all the movie buffs out there. It contains products such as Cloths, Merchandise, Frames, Shoes, bedsheets, gifts, and many more which are movie theme designs. You can easily navigate and order your items from our site and with our fast shipping you all can enjoy your purchased items in three days without waiting weeks. Go and grab your items soon!!</p>
+                <span>
+                    <a href="#prod">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                      Learn More
+                    </a>
+                </span>
+            </div>
+        </div>    
+        <span id="prod"></span>
+    </section>
+
+    <!-- product dashboard -->
+    <section>
+       <div class="product-dashboard">
+           <div>
+               <!-- product navigator -->
+               <div class="product-nav">
+                    <div class="categories">
+                        <span id="shoes" class="productactive">Shoes</span>
+                        <span id="shirts">Shirts</span>
+                        <span id="movies">Movies</span>
+                    </div>
+                    <div class="icons-product">
+                        <i class="fa-solid fa-grip"></i>
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </div>
+               </div>
+               <!-- slider using swiper js for product shoes -->
+               <div class="slider-product"  id="shoesDp">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <!-- shoe product 1 -->
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img1.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                 <div class="card-product__data">
+                                     <h1 class="card-product__title" id="itmNm1">Venom Nike</h1>
+                                     <span class="card-product__preci" id="itmprice1" >$30</span>
+                                     <p class="card-product__description">Sports Wear. Theme based on the movie Venom.</p>
+                                     
+                                     <div class="card-product-color">
+                                         <label for="">Color :</label>
+                                         <label class="container">
+                                            <input type="radio" id="blue1" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="red1" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="yellow1" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="green1" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                          </label>
+                                    </div>
+                                     
+                                 </div>
+                                 <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem1"></i>
+                                    <span id="valueQuantity1">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem1"></i>
+                                     </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                      </div>
+                        <!-- shoe product 2 -->
+                        <div class="swiper-slide">
+                            <div class="card-product">
+                                <img src="../imgs/product-page/img2.png" alt="shoe" class="card-product__img"> 
+                
+                                <!-- <div class="card-product__content">  -->
+                                     <div class="card-product__data">
+                                         <h1 class="card-product__title" id="itmNm2">SpiderMan Nike</h1>
+                                         <span class="card-product__preci" id="itmprice2" >$20</span>
+                                         <p class="card-product__description">Sports Wear. Theme based on the movie SpiderMan.</p>
+                                         
+                                         <div class="card-product-color">
+                                             <label for="">Color :</label>
+                                             <label class="container">
+                                                <input type="radio" id="blue2" value="Blue" checked="checked" name="radio">
+                                                <span class="checkmark chck1"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="red2" value="Red" name="radio">
+                                                <span class="checkmark chck2"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="yellow2" value="Yellow" name="radio">
+                                                <span class="checkmark chck3"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="green2" value="Green" name="radio">
+                                                <span class="checkmark chck4"></span>
+                                              </label>
+                                        </div>
+                                         
+                                     </div>
+                                     <div class="add-sub">
+                                        <i class="fa-solid fa-circle-minus" id="subItem2"></i>
+                                        <span id="valueQuantity2">0</span>
+                                        <i class="fa-solid fa-circle-plus" id="addItem2"></i>
+                                         </div>
+                                    
+                                <!-- </div> -->
+                            </div>
+                            
+                          </div>
+                        <!-- shoe product 3 -->
+                          <div class="swiper-slide">
+                            <div class="card-product">
+                                <img src="../imgs/product-page/img3.png" alt="shoe" class="card-product__img"> 
+                
+                                <!-- <div class="card-product__content">  -->
+                                     <div class="card-product__data">
+                                         <h1 class="card-product__title" id="itmNm3">C.A Converse</h1>
+                                         <span class="card-product__preci" id="itmprice3" >$50</span>
+                                         <p class="card-product__description">	Casual Wear. Theme based on the movie Captain America.</p>
+                                         
+                                         <div class="card-product-color">
+                                             <label for="">Color :</label>
+                                             <label class="container">
+                                                <input type="radio" id="blue3" value="Blue" checked="checked" name="radio">
+                                                <span class="checkmark chck1"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="red3" value="Red" name="radio">
+                                                <span class="checkmark chck2"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="yellow3" value="Yellow" name="radio">
+                                                <span class="checkmark chck3"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="green3" value="Green" name="radio">
+                                                <span class="checkmark chck4"></span>
+                                              </label>
+                                        </div>
+                                         
+                                     </div>
+                                     <div class="add-sub">
+                                        <i class="fa-solid fa-circle-minus" id="subItem3"></i>
+                                        <span id="valueQuantity3">0</span>
+                                        <i class="fa-solid fa-circle-plus" id="addItem3"></i>
+                                         </div>
+                                    
+                                <!-- </div> -->
+                            </div>
+                            
+                          </div>
+                        <!-- shoe product 4 -->
+                          <div class="swiper-slide">
+                            <div class="card-product">
+                                <img src="../imgs/product-page/img4.png" alt="shoe" class="card-product__img"> 
+                
+                                <!-- <div class="card-product__content">  -->
+                                     <div class="card-product__data">
+                                         <h1 class="card-product__title" id="itmNm4">IronMan Adidas</h1>
+                                         <span class="card-product__preci" id="itmprice4" >$40</span>
+                                         <p class="card-product__description">Casual Wear. Theme based on the movie IronMan.</p>
+                                         
+                                         <div class="card-product-color">
+                                             <label for="">Color :</label>
+                                             <label class="container">
+                                                <input type="radio" id="blue4" value="Blue" checked="checked" name="radio">
+                                                <span class="checkmark chck1"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="red4" value="Red" name="radio">
+                                                <span class="checkmark chck2"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="yellow4" value="Yellow" name="radio">
+                                                <span class="checkmark chck3"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="green4" value="Green" name="radio">
+                                                <span class="checkmark chck4"></span>
+                                              </label>
+                                        </div>
+                                         
+                                     </div>
+                                     <div class="add-sub">
+                                        <i class="fa-solid fa-circle-minus" id="subItem4"></i>
+                                        <span id="valueQuantity4">0</span>
+                                        <i class="fa-solid fa-circle-plus" id="addItem4"></i>
+                                         </div>
+                                    
+                                <!-- </div> -->
+                            </div>
+                            
+                          </div>
+                            <!-- shoe product 5 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="../imgs/product-page/img5.png" alt="shoe" class="card-product__img"> 
+                    
+                                    <!-- <div class="card-product__content">  -->
+                                            <div class="card-product__data">
+                                                <h1 class="card-product__title" id="itmNm5">Optimus Adidas</h1>
+                                                <span class="card-product__preci" id="itmprice5" >$35</span>
+                                                <p class="card-product__description">Sports Wear. Theme based on the movie Transformers.</p>
+                                                
+                                                <div class="card-product-color">
+                                                    <label for="">Color :</label>
+                                                    <label class="container">
+                                                    <input type="radio" id="blue5" value="Blue" checked="checked" name="radio">
+                                                    <span class="checkmark chck1"></span>
+                                                    </label>
+                                                    <label class="container">
+                                                    <input type="radio" id="red5" value="Red" name="radio">
+                                                    <span class="checkmark chck2"></span>
+                                                    </label>
+                                                    <label class="container">
+                                                    <input type="radio" id="yellow5" value="Yellow" name="radio">
+                                                    <span class="checkmark chck3"></span>
+                                                    </label>
+                                                    <label class="container">
+                                                    <input type="radio" id="green5" value="Green" name="radio">
+                                                    <span class="checkmark chck4"></span>
+                                                    </label>
+                                            </div>
+                                                
+                                            </div>
+                                            <div class="add-sub">
+                                            <i class="fa-solid fa-circle-minus" id="subItem5"></i>
+                                            <span id="valueQuantity5">0</span>
+                                            <i class="fa-solid fa-circle-plus" id="addItem5"></i>
+                                                </div>
+                                        
+                                    <!-- </div> -->
+                                </div>
+                                
+                                </div>
+                            <!-- shoe product 6 -->
+                          <div class="swiper-slide">
+                            <div class="card-product">
+                                <img src="../imgs/product-page/img6.png" alt="shoe" class="card-product__img"> 
+                
+                                <!-- <div class="card-product__content">  -->
+                                     <div class="card-product__data">
+                                         <h1 class="card-product__title" id="itmNm6">Minions Puma </h1>
+                                         <span class="card-product__preci" id="itmprice6" >$20</span>
+                                         <p class="card-product__description">Casual Wear. Theme based on the movie Minions</p>
+                                         
+                                         <div class="card-product-color">
+                                             <label for="">Color :</label>
+                                             <label class="container">
+                                                <input type="radio" id="blue6" value="Blue" checked="checked" name="radio">
+                                                <span class="checkmark chck1"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="red6" value="Red" name="radio">
+                                                <span class="checkmark chck2"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="yellow6" value="Yellow" name="radio">
+                                                <span class="checkmark chck3"></span>
+                                              </label>
+                                              <label class="container">
+                                                <input type="radio" id="green6" value="Green" name="radio">
+                                                <span class="checkmark chck4"></span>
+                                              </label>
+                                        </div>
+                                         
+                                     </div>
+                                     <div class="add-sub">
+                                        <i class="fa-solid fa-circle-minus" id="subItem6"></i>
+                                        <span id="valueQuantity6">0</span>
+                                        <i class="fa-solid fa-circle-plus" id="addItem6"></i>
+                                         </div>
+                                    
+                                <!-- </div> -->
+                            </div>
+                            
+                          </div>
+                 
+                      
+  
+                    </div>
+              
+                  </div>
+                
+                <div class="swiper-button-next main-next"></div>
+               <div class="swiper-button-prev"></div>
+               </div>
+               <!-- slider using swiper js for product shirts -->
+               <div class="slider-product" id="shirtsDp" >
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <!-- shirt product 1 -->
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img7.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                 <div class="card-product__data">
+                                     <h1 class="card-product__title" id="itmNm">Holmes Parx</h1>
+                                     <span class="card-product__preci" id="itmprice" >$50</span>
+                                     <p class="card-product__description">Casual Wear. A classic fit and a soft plain cotton build.</p>
+                                     
+                                     <div class="card-product-color">
+                                         <label for="">Color :</label>
+                                         <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                          </label>
+                                          <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                          </label>
+                                    </div>
+                                     
+                                 </div>
+                                 <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                     </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                      </div>
+
+                    <!-- shirt product 2 -->
+                    <div class="swiper-slide">
+                    <div class="card-product">
+                        <img src="../imgs/product-page/img8.png" alt="shoe" class="card-product__img"> 
+        
+                        <!-- <div class="card-product__content">  -->
+                                <div class="card-product__data">
+                                    <h1 class="card-product__title" id="itmNm">J.W Carhartt</h1>
+                                    <span class="card-product__preci" id="itmprice" >$60</span>
+                                    <p class="card-product__description">Casual Wear. Cotton-polyester blend and features a large.</p>
+                                    
+                                    <div class="card-product-color">
+                                        <label for="">Color :</label>
+                                        <label class="container">
+                                        <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                        <span class="checkmark chck1"></span>
+                                        </label>
+                                        <label class="container">
+                                        <input type="radio" id="red" value="Red" name="radio">
+                                        <span class="checkmark chck2"></span>
+                                        </label>
+                                        <label class="container">
+                                        <input type="radio" id="yellow" value="Yellow" name="radio">
+                                        <span class="checkmark chck3"></span>
+                                        </label>
+                                        <label class="container">
+                                        <input type="radio" id="green" value="Green" name="radio">
+                                        <span class="checkmark chck4"></span>
+                                        </label>
+                                </div>
+                                    
+                                </div>
+                                <div class="add-sub">
+                                <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                <span id="valueQuantity">0</span>
+                                <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                    </div>
+                            
+                        <!-- </div> -->
+                    </div>
+                    
+                    </div>
+
+ 
+                    <!-- shirt product 3 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img9.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">F.Fury Adidas</h1>
+                                        <span class="card-product__preci" id="itmprice" >$70</span>
+                                        <p class="card-product__description">Casual Wear. This tactical tee seam that prevents chaffing.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+
+                    <!-- shirt product 4 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img10.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">Pirate Weldon</h1>
+                                        <span class="card-product__preci" id="itmprice" >$30</span>
+                                        <p class="card-product__description">Skinny Wear. wearing on its own, lounging around the house.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+    
+ 
+                    <!-- shirt product 5 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img11.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">Fight Club Nova</h1>
+                                        <span class="card-product__preci" id="itmprice" >$80</span>
+                                        <p class="card-product__description">Casual Wear. With three new styles. Has 5 colors in total.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+     
+
+                    <!-- shirt product 6 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img12.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">America Kenzo</h1>
+                                        <span class="card-product__preci" id="itmprice" >$80</span>
+                                        <p class="card-product__description">Casual Wear.  The collections are artistic, but we took a liking to The Eye collection.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+    
+                    </div>
+              
+                  </div>
+                
+                <div class="swiper-button-next main-next"></div>
+               <div class="swiper-button-prev"></div>
+               </div>
+                <!-- slider using swiper js for product movies -->
+               <div class="slider-product" id="moviesDp" >
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                    <!-- movie product 1 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img13.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">Joker</h1>
+                                        <span class="card-product__preci" id="itmprice" >$20</span>
+                                        <p class="card-product__description">Family Friendly. Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+                    <!-- movie product 2 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img14.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">MIB</h1>
+                                        <span class="card-product__preci" id="itmprice" >$35</span>
+                                        <p class="card-product__description">Family Friendly. Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+                    <!-- movie product 3 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img15.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">Despicable Me</h1>
+                                        <span class="card-product__preci" id="itmprice" >$40</span>
+                                        <p class="card-product__description">Family Friendly. Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>
+
+                    <!-- movie product 4 -->
+                    <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img16.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">F&F</h1>
+                                        <span class="card-product__preci" id="itmprice" >$30</span>
+                                        <p class="card-product__description">Family Friendly. 
+                                            Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div>                      
+                     <!-- movie product 5 -->
+                     <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img17.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">Dora</h1>
+                                        <span class="card-product__preci" id="itmprice" >$45</span>
+                                        <p class="card-product__description">Family Friendly. 
+                                            Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div> 
+                     <!-- movie product 6 -->
+                     <div class="swiper-slide">
+                        <div class="card-product">
+                            <img src="../imgs/product-page/img18.png" alt="shoe" class="card-product__img"> 
+            
+                            <!-- <div class="card-product__content">  -->
+                                    <div class="card-product__data">
+                                        <h1 class="card-product__title" id="itmNm">C.I</h1>
+                                        <span class="card-product__preci" id="itmprice" >$50</span>
+                                        <p class="card-product__description">Family Friendly. 
+                                            Available in 4K and 1080p.</p>
+                                        
+                                        <div class="card-product-color">
+                                            <label for="">Color :</label>
+                                            <label class="container">
+                                            <input type="radio" id="blue" value="Blue" checked="checked" name="radio">
+                                            <span class="checkmark chck1"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="red" value="Red" name="radio">
+                                            <span class="checkmark chck2"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="yellow" value="Yellow" name="radio">
+                                            <span class="checkmark chck3"></span>
+                                            </label>
+                                            <label class="container">
+                                            <input type="radio" id="green" value="Green" name="radio">
+                                            <span class="checkmark chck4"></span>
+                                            </label>
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="add-sub">
+                                    <i class="fa-solid fa-circle-minus" id="subItem"></i>
+                                    <span id="valueQuantity">0</span>
+                                    <i class="fa-solid fa-circle-plus" id="addItem"></i>
+                                        </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                        
+                        </div> 
+                    </div>
+              
+                  </div>
+                
+                <div class="swiper-button-next main-next"></div>
+               <div class="swiper-button-prev"></div>
+               </div>
+           </div>
+       
+    <!-- order summary -->
+    <div class="section-summary">
+        <div class="title-order">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>Order Summary</h2>
+    </div>
+    <div class="summary">
+        <div class="col-8">
+            <div class="order-summary scroll-ex" >
+                <div id="cartOrder1"></div>
+                <div id="cartOrder2"></div>
+                <div id="cartOrder3"></div>
+                <div id="cartOrder4"></div>
+                <div id="cartOrder5"></div>
+                <div id="cartOrder6"></div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="order-summary order-total">
+                <div class="col-1-tot">
+                    <span>Subtotal</span>
+                    <span>Shipping Taxes</span>
+                    <span>Taxes</span>
+                    <span>Items</span>
+                    
+                    <span>Total (Including tax)</span>
+                </div>
+                <div class="col-1-tot">
+                    <span id="subtotal">0</span>
+                    <span id="shipTax">$15</span>
+                    <span id="Taxes">$10</span>
+                    <span id="Items">5</span>
+                    
+                    <span id="total">$0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- personal details -->
+    <div class="section-personal">
+        <div class="title-personal">
+        <i class="fa-solid fa-user"></i>
+        <h2>Personal Details</h2>
+        </div>
+        <div class="personal-form">
+            <form  class="form-personal">
+                <div class="col-personal">
+                    <div class="col-1-form">
+                    <div class="cont-inputs">
+                    <label for="fn">First Name: </label>
+                    <input type="text" name="fname" id="fn" placeholder="Enter your First Name" ></div>
+                    <div class="cont-inputs">
+                    <label for="ln">Last Name: </label>
+                    <input type="text" name="lname" id="ln" placeholder="Enter your Last Name"></div>
+                    <div class="cont-inputs">
+                    <label for="address">Address: </label>
+                    <textarea name="address" id="address" placeholder="Enter your Address"></textarea></div>
+                    <div class="cont-inputs">
+                    <label for="nic">NIC: </label>
+                    <input type="text" name="nic" id="nic" placeholder="Enter your NIC"></div>
+                    <div class="cont-inputs">
+                    <label for="tel">Contact No: </label>
+                    <input type="tel" name="tel" id="tel" maxlength="10" placeholder="Enter your Contact No"></div>
+                    <div class="cont-inputs">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email"></div>
+                    </div>
+                    <div class="col-2-form">
+                        <div class="cont-inputs">
+                    <label for="ch">Card Holder: </label>
+                    <input type="text" name="ch" id="ch" placeholder="Enter Name of Card Holder"></div>
+                    <div class="cont-inputs">
+                    <label for="ccn">Credit Card No: </label>
+                    <input type="text" name="ccn" id="ccn1" maxlength="16" placeholder="Enter Credit Card No "></div>
+                    <div class="cont-inputs">
+                    <label for="date">Card Expiration: </label>
+                    <input type="month" name="date" id="date" min="2025-01" max="2025-12" placeholder="Enter Card Expiration Date"></div>
+                    <div class="cont-inputs">
+                    <label for="cvv">CVV: </label>
+                    <input type="text" name="cvv" id="cvv" placeholder="Enter CVV No"></div>
+                    <div class="cont-inputs payment">
+                    <label>Payment Methods: </label>
+                    <div class="payment-method">
+                    <input type="radio" name="card" id="visa" value="visa" checked="checked">
+                    <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                    <input type="radio" name="card" id="am" value="am">
+                    <label for="am"><i class="fa-brands fa-cc-amex"></i></label>
+                    <input type="radio" name="card" id="mc" value="mc">
+                    <label for="mc"><i class="fa-brands fa-cc-mastercard"></i></label></div>
+                </div>
+                    
+                  <div class="submit-btns">
+                      <input type="button" name="button" value="Reset" onclick="resetData();">
+                    <input type="button" name="button" value="Place Order" onclick="saveData();">
+                   </div>
+                </div>                  
+</div>
+            </form>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="arrow2 up"></i></button>
+
+</div>
+    </section>
+    
+    <!-- invoice  -->
+    <div id="invoice-POS">
+    
+        <div id="top">
+          <div class="logo"></div>
+          <div class="info"> 
+            <h2>JAVA Entertainment</h2>
+          </div><!--End Info-->
+        </div><!--End InvoiceTop-->
+        
+        <div id="mid">
+          <div class="info">
+            <h2>Personal Info</h2>
+            <p> 
+              Name :  <span id="nameinvoice"> Vidula Peiris</span></br>
+                Email : <span id="emailinvoice">JohnDoe@gmail.com</span></br>  
+            </p>
+            <p>--------------------------------------------------------</p>
+            <h2>Invoice Details</h2>
+            
+          </div>
+        </div><!--End Invoice Mid-->
+        
+        <div id="bot">
+    
+                        <div id="table">
+                            <table>
+                                <tr class="tabletitle">
+                                    <td class="item"><h3>Product</h3></td>
+                                    <td class="Hours"><h3>Quantity</h3></td>
+                                    <td class="Rate"><h3>Price</h3></td>
+                                </tr>
+    
+                                <tr class="service">
+                                    <td class="tableitem"><p class="itemtext">C.A Nike</p></td>
+                                    <td class="tableitem"><p class="itemtext">2</p></td>
+                                    <td class="tableitem"><p class="itemtext">$80.00</p></td>
+                                </tr>
+    
+                                <tr class="service">
+                                    <td class="tableitem"><p class="itemtext">MIB</p></td>
+                                    <td class="tableitem"><p class="itemtext">3</p></td>
+                                    <td class="tableitem"><p class="itemtext">$120.00</p></td>
+                                </tr>
+    
+                                <tr class="service">
+                                    <td class="tableitem"><p class="itemtext">C.I</p></td>
+                                    <td class="tableitem"><p class="itemtext">1</p></td>
+                                    <td class="tableitem"><p class="itemtext">$50.00</p></td>
+                                </tr>
+    
+                                <tr class="tabletitle">
+                                    <td></td>
+                                    <td class="Rate"><h3>Total Bill :</h3></td>
+                                    <td class="payment"><h2>$3,644.25</h2></td>
+                                </tr>
+    
+                            </table>
+                        </div><!--End Table-->
+    
+                        <div id="legalcopy">
+                           
+                            <p>Delivery will arrive within 3 days.</p>
+                            <p>Have a nice day!!.</p>
+                        </div>
+    
+                    </div><!--End InvoiceBot-->
+      </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../mainpage.html">Home</a></li>
+                        <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                        <li><a href="../sitemap/sitemap.html">Sitemap</a></li>
+                        <li><a href="../query/query.html">Feedback</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="../thumbnail/thumbnailimages.html">Images</a></li>
+                        <li><a href="../products/products.html">Shop</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../quiz/quiz.html">Quiz</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Page Editors</h4>
+                    <ul>
+                        <li><a href="../students/student1.html">Student 1</a></li>
+                        <li><a href="../students/student2.html">Student 2</a></li>
+                        <li><a href="../students/student3.html">Student 3</a></li>
+                        <li><a href="../students/student4.html">Student 4</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>subscribe</h4>
+                    <div class="social-links">
+                        <form>
+                            <label for="email"></label>
+                            <input class="la_2" type="email" id="email" name="email" placeholder="Enter the Email">
+                            <input class="la" type="submit" name="SEND" value="SEND">
+                        </form>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="footer-total">
+                <div class="footer-col">
+                    <div class="Text">
+                        <ul>
+                            <li><a href="../students/student1.html"> Page Developer </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="group">
+                        <ul>
+                            <li><a href="#"> Group A7 </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </footer>
+ 
+
+    <!-- external js for product page -->
+    <script src="products.js"></script>
+
+    <script>
+        
+var button1 = document.getElementById("top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button1.style.display = "block";
+  } else {
+    button1.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
